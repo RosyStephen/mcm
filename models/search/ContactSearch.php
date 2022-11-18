@@ -61,8 +61,8 @@ class ContactSearch extends Contact
             'id' => $this->id,
             'person_id' => \Yii::$app->request->get('person_id'),
             'deleted_status' => 0,
-            'created_at' => $this->created_at,
-            'updated_at' => $this->updated_at,
+            // 'created_at' => $this->created_at,
+            // 'updated_at' => $this->updated_at,
         ]);
 
         $query->andFilterWhere(['like', 'country_code', $this->country_code])
