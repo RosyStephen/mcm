@@ -18,7 +18,7 @@ class PersonSearch extends Person
     {
         return [
             [['id'], 'integer'],
-            [['name', 'email_id', 'created_at', 'updated_at'], 'safe'],
+            [['name', 'email_id'], 'safe'],
         ];
     }
 

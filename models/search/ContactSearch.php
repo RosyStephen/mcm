@@ -18,7 +18,7 @@ class ContactSearch extends Contact
     {
         return [
             [['id', 'person_id'], 'integer'],
-            [['country_code', 'phone_number', 'created_at', 'updated_at'], 'safe'],
+            [['country_code', 'phone_number'], 'safe'],
         ];
     }
 
